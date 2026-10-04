@@ -5,3 +5,9 @@ This dual sided display was sold by Spirit Halloween and has been modified to ha
 ## User Guide
 
 [Download the Dual Holiday Countdown Display User Guide (PDF)](./User%20Guide/Dual_Holiday_Countdown_User_Guide_Final.pdf)
+
+## Firmware Updates
+
+The latest firmware is available from the project's GitHub Releases page.
+
+[Download the Latest Firmware](../../releases/latest)
