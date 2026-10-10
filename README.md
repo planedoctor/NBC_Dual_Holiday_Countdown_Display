@@ -11,3 +11,12 @@ This dual sided display was sold by Spirit Halloween and has been modified to ha
 The latest firmware is available from the project's GitHub Releases page.
 
 [Download the Latest Firmware](../../releases/latest)
+
+## Support
+
+Need help with your Dual Holiday Countdown Display?
+Have a question or encountered a problem?
+
+Contact HomeHackery at [HomeHackery1@gmail.com](mailto:HomeHackery1@gmail.com).
+
+We're happy to help!
