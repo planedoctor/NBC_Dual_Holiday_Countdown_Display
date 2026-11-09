@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quick setup and user guide for the HomeHackery Dual Holiday Countdown Display.">
+  <title>Dual Holiday Countdown Display | HomeHackery</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f2f2f2;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px 15px 18px;
+    }
+    .logo {
+      display: block;
+      width: 180px;
+      max-width: 65%;
+      height: auto;
+      margin: 0 auto 5px;
+    }
+    header h1 {
+      margin: 4px 0 0;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+    header p {
+      margin: 5px 0 0;
+      color: #ddd;
+    }
+    main {
+      width: 100%;
+      max-width: 850px;
+      margin: 24px auto;
+      padding: 28px 32px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+    h2 {
+      color: #222;
+      margin: 0 0 12px;
+      font-size: 1.45rem;
+    }
+    h3 {
+      margin: 18px 0 6px;
+      font-size: 1.08rem;
+    }
+    p { margin: 8px 0 12px; }
+    a {
+      color: #075da8;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .quick-nav {
+      background: #eee;
+      border-radius: 7px;
+      padding: 16px 20px;
+      margin: 0 0 26px;
+    }
+    .quick-nav h2 { margin-bottom: 8px; }
+    .quick-nav ul {
+      margin: 0;
+      padding-left: 22px;
+      columns: 2;
+      column-gap: 28px;
+    }
+    .quick-nav li { margin: 3px 0; break-inside: avoid; }
+    section {
+      padding: 20px 0;
+      border-top: 1px solid #ddd;
+      scroll-margin-top: 12px;
+    }
+    section:first-of-type { border-top: 0; }
+    ol, ul { padding-left: 24px; }
+    li { margin: 5px 0; }
+    .note {
+      margin: 14px 0;
+      padding: 12px 15px;
+      background: #fff4cc;
+      border-left: 4px solid #e0b329;
+      border-radius: 4px;
+    }
+    .choice-list {
+      margin: 10px 0 12px;
+      padding: 12px 16px;
+      background: #f6f6f6;
+      border-radius: 5px;
+    }
+    .button-link {
+      display: inline-block;
+      margin: 5px 8px 5px 0;
+      padding: 9px 15px;
+      color: #fff;
+      background: #075da8;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .button-link:hover {
+      color: #fff;
+      background: #064b86;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      color: #555;
+      padding: 8px 15px 28px;
+      font-size: .95rem;
+    }
+    footer strong { color: #222; }
+    @media (max-width: 600px) {
+      main {
+        margin: 12px;
+        width: auto;
+        padding: 20px 18px;
+        border-radius: 6px;
+      }
+      header h1 { font-size: 1.55rem; }
+      .quick-nav ul { columns: 1; }
+      h2 { font-size: 1.3rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="logo" src="images/600x600_logo.png" alt="HomeHackery logo">
+    <h1>Dual Holiday Countdown Display</h1>
+    <p>Quick Setup &amp; User Guide</p>
+  </header>
+
+  <main>
+    <nav class="quick-nav" aria-label="Quick navigation">
+      <h2>Quick Navigation</h2>
+      <ul>
+        <li><a href="#power">Power Up Your Display</a></li>
+        <li><a href="#wifi">Connect to Your Wi-Fi</a></li>
+        <li><a href="#control">Open the Control Page</a></li>
+        <li><a href="#displays">Select Which Displays Are On</a></li>
+        <li><a href="#timezone">Set Your Time Zone</a></li>
+        <li><a href="#firmware">Firmware Updates</a></li>
+        <li><a href="#network">Moving or Changing Wi-Fi</a></li>
+        <li><a href="#support">Project &amp; Support</a></li>
+      </ul>
+    </nav>
+
+    <section id="power">
+      <h2>1. Power Up Your Display</h2>
+      <p>Connect the USB power cable to the display and plug it into a USB power adapter.</p>
+      <p>The display will briefly flash when power is connected, then remains blank while it connects to Wi-Fi and obtains the current time.</p>
+      <p>Once the display has successfully connected to Wi-Fi and synchronized its time, the countdown will appear.</p>
+    </section>
+
+    <section id="wifi">
+      <h2>2. Connect the Display to Your Wi-Fi</h2>
+      <ol>
+        <li>On your phone, tablet, or computer, connect to the Wi-Fi network named <strong>DualHoliday-Setup</strong> using password <strong>countdown123</strong>.</li>
+        <li>Your device may show “No Internet Connection.” This is normal.</li>
+        <li>The Dual Holiday Countdown Setup page should open automatically. If it does not, open a web browser and go to <strong>192.168.4.1</strong>.</li>
+        <li>Select <strong>Configure Wi-Fi</strong>.</li>
+        <li>Select your home's <strong>2.4 GHz</strong> Wi-Fi network from the list.</li>
+        <li>Enter your Wi-Fi password and select <strong>Save</strong>.</li>
+        <li>The display will connect to your Wi-Fi and synchronize its time.</li>
+        <li>Once connected, the countdown will appear on the display.</li>
+      </ol>
+    </section>
+
+    <section id="control">
+      <h2>3. Open the Display's Control Page</h2>
+      <p>Once the display is connected to your Wi-Fi, you can access its control page from any device connected to the same Wi-Fi network.</p>
+      <p>Open a web browser and enter:</p>
+      <p><a class="button-link" href="http://dualholiday.local">Open dualholiday.local</a></p>
+      <p>The Dual Holiday Countdown control page will open. From this page, you can view the display's status and change its settings.</p>
+    </section>
+
+    <section id="displays">
+      <h2>4. Select Which Displays Are On</h2>
+      <p>From the Dual Holiday Countdown control page, find <strong>Displays On</strong> and choose which countdown display(s) you want illuminated:</p>
+      <div class="choice-list">
+        <p><strong>Halloween</strong> — Halloween countdown only</p>
+        <p><strong>Christmas</strong> — Christmas countdown only</p>
+        <p><strong>Both</strong> — Both countdowns</p>
+      </div>
+      <p>Select your preferred option.</p>
+    </section>
+
+    <section id="timezone">
+      <h2>5. Set Your Time Zone</h2>
+      <ol>
+        <li>On the control page, find <strong>Time Zone</strong>.</li>
+        <li>Select your local time zone from the list.</li>
+        <li>Select <strong>Save Settings</strong>.</li>
+      </ol>
+      <p>The display will use this time zone for its clock and countdown calculations.</p>
+    </section>
+
+    <section id="firmware">
+      <h2>6. Firmware Updates</h2>
+      <p>The latest firmware and project information are available on the HomeHackery GitHub project page.</p>
+      <p>If you experience a problem with the display, check the GitHub page for the latest information and available updates. Help is also available through the project information there.</p>
+      <p>Firmware update instructions are provided separately with each update.</p>
+      <p><a class="button-link" href="https://github.com/planedoctor/NBC_Dual_Holiday_Countdown_Display/releases">View Firmware Releases</a></p>
+    </section>
+
+    <section id="network">
+      <h2>7. Moving the Display or Changing Wi-Fi Networks</h2>
+      <p>If you move the display to a different location or change your home Wi-Fi network, the display will automatically enter Wi-Fi Setup Mode if it cannot connect to the saved network.</p>
+      <p>Simply repeat <a href="#wifi">Step 2: Connect the Display to Your Wi-Fi</a> and select your new Wi-Fi network.</p>
+      <p>Once the new Wi-Fi information has been saved, the display will automatically connect and resume normal operation.</p>
+      <div class="note">
+        <strong>Important:</strong> If Wi-Fi temporarily goes offline while the display is already running, the countdown will continue. If the display loses power while Wi-Fi is unavailable, the countdown will remain blank until Wi-Fi is restored and the display can synchronize its time.
+      </div>
+    </section>
+
+    <section id="support">
+      <h2>Project &amp; Support</h2>
+      <p><strong>HomeHackery GitHub Project:</strong>
+        <a href="https://github.com/planedoctor/NBC_Dual_Holiday_Countdown_Display">Visit the GitHub Project</a>
+      </p>
+      <p><strong>HomeHackery on YouTube:</strong>
+        <a href="https://www.youtube.com/@TheHomeHackery">@TheHomeHackery</a>
+      </p>
+      <p><strong>Support:</strong> <a href="mailto:HomeHackery1@gmail.com">HomeHackery1@gmail.com</a></p>
+      <p><a class="button-link" href="User%20Guide/Dual_Holiday_Countdown_User_Guide_Final.pdf">Download the PDF User Guide</a></p>
+      <p><strong>Thank you for supporting HomeHackery!</strong><br><em>Because "Stock" is Boring.</em></p>
+    </section>
+  </main>
+
+  <footer>
+    HomeHackery &bull; Dual Holiday Countdown Display
+  </footer>
+</body>
+</html>
